@@ -46,24 +46,20 @@
     </script>
 
     <style>
-        /* Base & Reset */
         body {
             background-color: #ffffff;
             color: #1a1a1a;
             -webkit-font-smoothing: antialiased;
         }
         
-        /* Language Toggle System */
         body[data-lang="en"] .lang-zh { display: none !important; }
         body[data-lang="zh"] .lang-en { display: none !important; }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #fff; }
         ::-webkit-scrollbar-thumb { background: #e5e5e5; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #ccc; }
 
-        /* Button Styles */
         .academy-btn {
             transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
@@ -72,14 +68,11 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* Grid & Borders */
         .border-grid { border: 1px solid #e5e5e5; }
 
-        /* Reveal Text Animation */
         .reveal-text { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal-text.active { opacity: 1; transform: translateY(0); }
         
-        /* Image Hover Zoom */
         .img-zoom-container { overflow: hidden; }
         .img-zoom-container img { transition: transform 0.7s ease; }
         .group:hover .img-zoom-container img { transform: scale(1.05); }
@@ -106,14 +99,14 @@
                 <a href="#vision" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Vision</span><span class="lang-zh">願景</span></a>
                 <a href="#categories" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Categories</span><span class="lang-zh">類別</span></a>
                 <a href="#awards" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Awards</span><span class="lang-zh">獎項</span></a>
-                <a href="#schedule" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Schedule</span><span class="lang-zh">日程</span></a>
                 <a href="#ecosystem" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Ecosystem</span><span class="lang-zh">生態</span></a>
+                <a href="#submission" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Submission</span><span class="lang-zh">參賽</span></a>
                 <a href="#comparison" class="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"><span class="lang-en">Why Us</span><span class="lang-zh">對比</span></a>
             </div>
 
             <div class="flex items-center gap-4">
                 <button onclick="toggleLanguage()" class="text-xs font-mono border border-gray-200 px-3 py-1.5 rounded-full hover:bg-black hover:text-white transition-all uppercase">
-                    <span class="lang-en">ZH</span><span class="lang-zh">EN</span>
+                    <span class="lang-en">繁中</span><span class="lang-zh">EN</span>
                 </button>
                 
                 <a href="#submission" class="hidden md:flex bg-black text-white text-[13px] font-medium px-6 py-3 rounded-full academy-btn items-center gap-2">
@@ -155,7 +148,7 @@
                         <span class="text-[10px] uppercase font-mono text-gray-400"><span class="lang-en">Awards</span><span class="lang-zh">專業獎項</span></span>
                     </div>
                     <div class="bg-white p-6 hover:bg-gray-50 transition-colors">
-                        <span class="block text-3xl font-bold mb-1">40%+</span>
+                        <span class="block text-3xl font-bold mb-1">70%+</span>
                         <span class="text-[10px] uppercase font-mono text-gray-400"><span class="lang-en">AI Native</span><span class="lang-zh">AI含量要求</span></span>
                     </div>
                     <div class="bg-white p-6 hover:bg-gray-50 transition-colors">
@@ -171,7 +164,7 @@
         <div class="whitespace-nowrap animate-marquee flex items-center gap-12 opacity-80 text-xs font-mono font-medium uppercase tracking-widest text-black">
             <span>Neural Responsive Cinema</span> <span>✦</span> <span>Brain-Computer Interface</span> <span>✦</span> <span>Web3 Governance</span> <span>✦</span> <span>StarOS Digital Human</span> <span>✦</span> <span>Generative Film</span> <span>✦</span>
             <span>神經響應式電影</span> <span>✦</span> <span>腦機接口觀影</span> <span>✦</span> <span>Web3 治理</span> <span>✦</span> <span>StarOS 數字人</span> <span>✦</span> <span>生成式電影</span> <span>✦</span>
-             <span>Neural Responsive Cinema</span> <span>✦</span> <span>Brain-Computer Interface</span> <span>✦</span> <span>Web3 Governance</span> <span>✦</span> <span>StarOS Digital Human</span> <span>✦</span> <span>Generative Film</span> <span>✦</span>
+            <span>Neural Responsive Cinema</span> <span>✦</span> <span>Brain-Computer Interface</span> <span>✦</span> <span>Web3 Governance</span> <span>✦</span> <span>StarOS Digital Human</span> <span>✦</span> <span>Generative Film</span> <span>✦</span>
         </div>
     </div>
 
@@ -210,57 +203,132 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 reveal-text">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🎬</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">AI-Native Creative Paradigm</span><span class="lang-zh">AI原生創作範式</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">From "auteur theory" to "conductor theory" - creators guide complex human-AI systems through precise prompt engineering.</span>
+                            <span class="lang-zh">從「作者論」到「指揮家論」的轉變，創作者通過精準的指令工程引導人類與AI組成的複雜系統。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🏆</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Breakthrough Award System</span><span class="lang-zh">突破性獎項體系</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">27 professional awards covering four dimensions: technological innovation, artistic achievement, commercial value, and social impact.</span>
+                            <span class="lang-zh">27個專業獎項涵蓋技術創新、藝術成就、商業價值和社會影響四個維度。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🧠</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Neural Responsive Exhibition</span><span class="lang-zh">神經響應式展映</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">World's first brain-computer interface viewing experience, allowing film content to dynamically adjust based on audience reactions.</span>
+                            <span class="lang-zh">全球首創腦機接口觀影體驗，讓電影內容根據觀眾反應動態調整。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🌐</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Web3 Ecosystem Integration</span><span class="lang-zh">Web3生態整合</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Complete ecosystem based on AIF tokens, from project financing to copyright management, all transparent on blockchain.</span>
+                            <span class="lang-zh">基於AIF代幣的完整生態系統，從項目融資到版權管理，所有流程透明化。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🎭</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Hybrid Intelligence Judging</span><span class="lang-zh">混合智能評審</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">"Hybrid Intelligence Collective" jury composed of art, technology, ethics, and community factions.</span>
+                            <span class="lang-zh">由藝術派系、技術派系、倫理派系和社區派系組成的「混合智能集體」評審團。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🚀</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">404.world Platform</span><span class="lang-zh">404.world平台</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Interactive streaming platform supporting parallel world creation and AI-assisted user-generated content.</span>
+                            <span class="lang-zh">互動流媒體平台，支持平行世界創作、AI輔助用戶生成內容。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🎯</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Precise Value Discovery</span><span class="lang-zh">精準價值發現</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Through four-dimensional evaluation matrix, accurately assess technological innovation, artistic value, and cultural impact.</span>
+                            <span class="lang-zh">通過四維評價矩陣，精準評估AI原生作品的技術創新度、藝術價值和文化影響力。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">💎</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">NFT Digital Assets</span><span class="lang-zh">NFT數字資產</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Award-winning works are automatically minted as unique NFT collectibles, pioneering a new value model.</span>
+                            <span class="lang-zh">獲獎作品自動鑄造為獨特的NFT收藏品，開創電影獎項的全新價值模式。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <div class="text-3xl mb-4">🌟</div>
+                        <h4 class="font-bold mb-2"><span class="lang-en">Global DAO Governance</span><span class="lang-zh">全球DAO治理</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">AIF token holders participate in festival governance through decentralized autonomous organizations (DAO).</span>
+                            <span class="lang-zh">AIF代幣持有者通過去中心化自治組織（DAO）參與電影節治理。</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="categories" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50">
         <div class="flex justify-between items-end mb-12 reveal-text">
-            <h2 class="text-3xl font-bold tracking-tight"><span class="lang-en">Core Categories</span><span class="lang-zh">四大參賽類別</span></h2>
+            <h2 class="text-3xl font-bold tracking-tight"><span class="lang-en">Core Categories</span><span class="lang-zh">核心參賽類別</span></h2>
             <span class="text-xs font-mono text-gray-400">2026 Official Selection</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="group bg-white border border-gray-200 p-5 rounded-xl hover:shadow-2xl hover:border-black/10 transition-all duration-500 reveal-text">
                 <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden rounded-lg img-zoom-container">
-                    <img src="2.jpg" class="w-full h-full object-cover" alt="Generative Film">
+                    <img src="2.jpg" alt="Generative Film" class="w-full h-full object-cover">
                 </div>
                 <div class="flex justify-between items-start mb-4">
                     <span class="font-mono text-xs text-gray-400">01</span>
                     <span class="px-2 py-1 bg-black text-white rounded text-[10px] font-bold font-mono">40% - 70% AI</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 group-hover:text-gray-600 transition-colors"><span class="lang-en">Generative Film</span><span class="lang-zh">生成式電影</span></h3>
-                <p class="text-sm text-gray-500 leading-relaxed mb-6 h-20 overflow-hidden">
-                    <span class="lang-en">Linear narrative where visuals/audio are AI-generated. Focus on human guidance and aesthetic style.</span>
-                    <span class="lang-zh">主體敘事結構為線性，但視覺、聲音或敘事元素主要由AI系統生成。評價重點在於人類創作者的引導與美學風格。</span>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    <span class="lang-en">Linear narrative where visuals/audio are AI-generated. The evaluation focuses on how human creators guide AI to generate content with unique aesthetic styles.</span>
+                    <span class="lang-zh">主體敘事結構為線性，但視覺、聲音或敘事元素主要由AI系統生成。評價重點在於人類創作者如何引導AI生成具有獨特美學風格的內容。</span>
                 </p>
             </div>
 
             <div class="group bg-white border border-gray-200 p-5 rounded-xl hover:shadow-2xl hover:border-black/10 transition-all duration-500 reveal-text delay-100">
                 <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden rounded-lg img-zoom-container">
-                    <img src="3.jpg" class="w-full h-full object-cover" alt="Interactive Narrative">
+                    <img src="3.jpg" alt="Interactive Narrative" class="w-full h-full object-cover">
                 </div>
                 <div class="flex justify-between items-start mb-4">
                     <span class="font-mono text-xs text-gray-400">02</span>
                     <span class="px-2 py-1 bg-black text-white rounded text-[10px] font-bold font-mono">50% - 80% AI</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 group-hover:text-gray-600 transition-colors"><span class="lang-en">Interactive Narrative</span><span class="lang-zh">互動敘事</span></h3>
-                <p class="text-sm text-gray-500 leading-relaxed mb-6 h-20 overflow-hidden">
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
                     <span class="lang-en">Non-linear explorable experiences. Audience influences story direction or freely explores virtual worlds.</span>
-                    <span class="lang-zh">非線性的可探索體驗，觀眾能夠影響故事走向或自由探索AI輔助構建的虛擬世界。強調代理感。</span>
+                    <span class="lang-zh">非線性的可探索體驗，觀眾能夠影響故事走向或自由探索AI輔助構建的虛擬世界。</span>
                 </p>
             </div>
 
             <div class="group bg-white border border-gray-200 p-5 rounded-xl hover:shadow-2xl hover:border-black/10 transition-all duration-500 reveal-text delay-200">
                 <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden rounded-lg img-zoom-container">
-                    <img src="4.jpg" class="w-full h-full object-cover" alt="Procedural Systems">
+                    <img src="4.jpg" alt="Procedural Systems" class="w-full h-full object-cover">
                 </div>
                 <div class="flex justify-between items-start mb-4">
                     <span class="font-mono text-xs text-gray-400">03</span>
                     <span class="px-2 py-1 bg-black text-white rounded text-[10px] font-bold font-mono">70% - 90% AI</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 group-hover:text-gray-600 transition-colors"><span class="lang-en">Procedural Systems</span><span class="lang-zh">程序化系統</span></h3>
-                <p class="text-sm text-gray-500 leading-relaxed mb-6 h-20 overflow-hidden">
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
                     <span class="lang-en">The entry is a "system" capable of generating unique, unpredictable narrative or visual experiences with each run.</span>
                     <span class="lang-zh">參賽作品本身是一個「系統」，能夠在每次運行時生成獨一無二、不可預見的敘事或視覺體驗。</span>
                 </p>
@@ -268,14 +336,14 @@
 
             <div class="group bg-white border border-gray-200 p-5 rounded-xl hover:shadow-2xl hover:border-black/10 transition-all duration-500 reveal-text delay-300">
                 <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden rounded-lg img-zoom-container">
-                    <img src="5.jpg" class="w-full h-full object-cover" alt="Digital Life">
+                    <img src="5.jpg" alt="Digital Life" class="w-full h-full object-cover">
                 </div>
                 <div class="flex justify-between items-start mb-4">
                     <span class="font-mono text-xs text-gray-400">04</span>
                     <span class="px-2 py-1 bg-black text-white rounded text-[10px] font-bold font-mono">60% - 85% AI</span>
                 </div>
                 <h3 class="text-xl font-bold mb-3 group-hover:text-gray-600 transition-colors"><span class="lang-en">Digital Life</span><span class="lang-zh">數字生命</span></h3>
-                <p class="text-sm text-gray-500 leading-relaxed mb-6 h-20 overflow-hidden">
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
                     <span class="lang-en">Artworks centered around AI-driven digital humans and synthetic performances. Evaluating realism.</span>
                     <span class="lang-zh">以AI驅動的數字人、虛擬角色為核心的藝術作品。評審重點是數字角色的真實感與情感表現力。</span>
                 </p>
@@ -322,7 +390,7 @@
 
             <div class="p-10 hover:bg-black hover:text-white transition-colors duration-300 group">
                 <span class="text-xs font-mono opacity-50 mb-6 block">03 / Ethics</span>
-                <h3 class="text-2xl font-bold mb-2"><span class="lang-en">Asimov Ethics</span><span class="lang-zh">阿西莫夫倫理獎</span></h3>
+                <h3 class="text-2xl font-bold mb-2"><span class="lang-en">Asimov Ethics Integration Award</span><span class="lang-zh">阿西莫夫倫理整合獎</span></h3>
                 <p class="text-xs uppercase tracking-widest opacity-50 mb-8"><span class="lang-en">Responsible AI</span><span class="lang-zh">負責任AI應用</span></p>
                 <div class="text-5xl font-bold mb-4 font-serif italic">$200K</div>
                 <p class="text-xs opacity-50 leading-relaxed border-t border-current pt-4 group-hover:border-white/20">
@@ -348,6 +416,14 @@
                         <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Best Audio Design</span><span class="lang-zh">最佳AI音頻設計獎</span></span>
                         <span class="font-mono text-gray-400">$80K</span>
                     </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Best Interactive System</span><span class="lang-zh">最佳互動系統設計獎</span></span>
+                        <span class="font-mono text-gray-400">$80K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Most Creative Prompting</span><span class="lang-zh">最具創意指令工程獎</span></span>
+                        <span class="font-mono text-gray-400">$60K</span>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -362,15 +438,179 @@
                         <span class="font-mono text-gray-400">$100K</span>
                     </li>
                     <li class="flex justify-between items-center text-sm group">
-                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Lovelace Synthetic Perf.</span><span class="lang-zh">洛芙萊斯合成表演獎</span></span>
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Lovelace Synthetic Performance</span><span class="lang-zh">洛芙萊斯合成表演獎</span></span>
                         <span class="font-mono text-gray-400">$80K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Best World Building</span><span class="lang-zh">最佳世界構建獎</span></span>
+                        <span class="font-mono text-gray-400">$80K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Best Experimental Form</span><span class="lang-zh">最佳實驗形式獎</span></span>
+                        <span class="font-mono text-gray-400">$60K</span>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pt-8 mt-8 border-t border-gray-200 reveal-text">
+            <div>
+                <h4 class="font-bold text-sm mb-6 pb-2 border-b border-gray-200 uppercase tracking-wider"><span class="lang-en">Commercial Value</span><span class="lang-zh">商業價值獎項</span></h4>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Most Commercial Potential</span><span class="lang-zh">最具商業潛力獎</span></span>
+                        <span class="font-mono text-gray-400">$100K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Best IP Development</span><span class="lang-zh">最佳IP開發潛力獎</span></span>
+                        <span class="font-mono text-gray-400">$80K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Audience Favorite</span><span class="lang-zh">觀眾最喜愛獎</span></span>
+                        <span class="font-mono text-gray-400">$60K</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm mb-6 pb-2 border-b border-gray-200 uppercase tracking-wider"><span class="lang-en">Social Impact</span><span class="lang-zh">社會影響獎項</span></h4>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Cultural Bridge Award</span><span class="lang-zh">文化橋樑獎</span></span>
+                        <span class="font-mono text-gray-400">$100K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Educational Impact</span><span class="lang-zh">教育影響力獎</span></span>
+                        <span class="font-mono text-gray-400">$80K</span>
+                    </li>
+                    <li class="flex justify-between items-center text-sm group">
+                        <span class="text-gray-700 group-hover:text-black font-medium"><span class="lang-en">Sustainability Champion</span><span class="lang-zh">可持續發展獎</span></span>
+                        <span class="font-mono text-gray-400">$60K</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="mt-20 pt-16 border-t border-gray-200">
+            <h3 class="text-3xl font-bold text-center mb-12 reveal-text"><span class="lang-zh">混合智能集體評審流程</span><span class="lang-en">Hybrid Intelligence Collective Review Process</span></h3>
+            
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-200 reveal-text">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold font-mono">01</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-3"><span class="lang-zh">第一輪：初步篩選</span><span class="lang-en">Round 1: Preliminary Screening</span></h4>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-zh">技術派系和倫理派系進行AI原生度驗證、技術可行性評估和倫理合規性檢查。通過率約60%，確保作品符合基本標準。</span>
+                                <span class="lang-en">Technology and ethics factions conduct AI-native verification, technical feasibility assessment, and ethical compliance checks. Pass rate approximately 60%, ensuring works meet basic standards.</span>
+                            </p>
+                            <div class="text-sm text-gray-500">
+                                <strong><span class="lang-zh">時間：</span><span class="lang-en">Time:</span></strong> <span class="lang-zh">提交截止後4週內完成</span><span class="lang-en">Completed within 4 weeks after submission deadline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-200 reveal-text">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold font-mono">02</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-3"><span class="lang-zh">第二輪：專業評審</span><span class="lang-en">Round 2: Professional Review</span></h4>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-zh">四個派系全員參與，按照四維評價矩陣進行詳細評估。每件作品至少3名評委評審，通過率約40%。</span>
+                                <span class="lang-en">All four factions participate, conducting detailed evaluations according to the four-dimensional evaluation matrix. Each work reviewed by at least 3 jurors, pass rate approximately 40%.</span>
+                            </p>
+                            <div class="text-sm text-gray-500">
+                                <strong><span class="lang-zh">評審團：</span><span class="lang-en">Jury:</span></strong> <span class="lang-zh">藝術派系25% + 技術派系25% + 倫理派系20% + 社區派系30%</span><span class="lang-en">Art Faction 25% + Technology Faction 25% + Ethics Faction 20% + Community Faction 30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-xl border border-gray-200 reveal-text">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-bold font-mono">03</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-3"><span class="lang-zh">第三輪：終極評審</span><span class="lang-en">Round 3: Final Review</span></h4>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-zh">核心評審委員會集中評審，現場觀看/體驗重點作品，創作者答辯，最終投票決定所有獎項獲得者。</span>
+                                <span class="lang-en">Core review committee conducts concentrated review, live viewing/experiencing of key works, creator defense, final voting to determine all award winners.</span>
+                            </p>
+                            <div class="text-sm text-gray-500">
+                                <strong><span class="lang-zh">形式：</span><span class="lang-en">Format:</span></strong> <span class="lang-zh">現場展映 + 深度體驗 + 創作者答辯 + 秘密投票</span><span class="lang-en">Live screening + Deep experience + Creator defense + Secret ballot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section id="submission" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-t border-gray-200">
+    <section id="ecosystem" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-4">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 reveal-text">
+                    <span class="lang-en">The 9+1 <br> Ecosystem</span>
+                    <span class="lang-zh">9+1 <br> 生態架構</span>
+                </h2>
+                <span class="inline-block px-3 py-1 rounded-full border border-gray-300 text-xs font-mono text-gray-500 uppercase reveal-text delay-100">// Creative Economy Infrastructure</span>
+            </div>
+            <div class="md:col-span-8">
+                <p class="text-xl font-light text-gray-600 mb-12 reveal-text">
+                    <span class="lang-en">Building complete AI-native creative economy infrastructure, achieving direct transformation of artistic success into economic returns.</span>
+                    <span class="lang-zh">構建完整的AI原生創意經濟基礎設施，實現藝術成功與經濟回報的直接轉化。</span>
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal-text">
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">AIF.Center</span><span class="lang-zh">征片中心</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Global work collection platform with strict AI-native recognition standards.</span>
+                            <span class="lang-zh">全球作品征集和管理平台，嚴格的AI原生認定標準。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">AIF.Market</span><span class="lang-zh">AI電影市場</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Token-based decentralized financing and IP incubation platform.</span>
+                            <span class="lang-zh">基於代幣的去中心化融資、交易與IP孵化平台。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">AI Film Academy (AIFA)</span><span class="lang-zh">AI電影學院</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Professional AI creative talent cultivation institution.</span>
+                            <span class="lang-zh">專業的AI創作人才培養機構。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">404.world Platform</span><span class="lang-zh">404.world平台</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Interactive streaming platform with watch-to-earn model.</span>
+                            <span class="lang-zh">互動流媒體平台，實現"觀看即挖礦"。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">Exhibition & Competition</span><span class="lang-zh">展映競賽單元</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Nine innovative screening spaces including neural responsive hall.</span>
+                            <span class="lang-zh">九大創新展映空間，包括神經響應式展映廳。</span>
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-all">
+                        <h4 class="font-bold mb-2"><span class="lang-en">AIF Exchange</span><span class="lang-zh">AIF交易所</span></h4>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">Economic hub providing AIF token and FilmToken liquidity.</span>
+                            <span class="lang-zh">生態系統的經濟樞紐，提供AIF代幣流動性。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="submission" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-t border-gray-200">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div class="reveal-text">
                 <h2 class="text-3xl font-bold mb-12"><span class="lang-en">Submission Guide</span><span class="lang-zh">參賽指南</span></h2>
@@ -441,164 +681,7 @@
         </div>
     </section>
 
-    <section id="ecosystem" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
-        <div class="mb-12 reveal-text">
-            <h2 class="text-3xl font-bold mb-2"><span class="lang-en">The Ecosystem</span><span class="lang-zh">生態系統</span></h2>
-            <p class="text-gray-500 font-mono text-sm">9+1 Infrastructure Architecture</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 reveal-text">
-            <div class="col-span-2 row-span-2 bg-black text-white p-8 rounded-2xl flex flex-col justify-between group cursor-pointer relative overflow-hidden">
-                <div class="relative z-10">
-                    <span class="inline-block px-2 py-1 bg-white/20 rounded text-[10px] font-bold uppercase mb-4">Core Hub</span>
-                    <h3 class="text-4xl font-serif italic mb-4">AIF.Center</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
-                        <span class="lang-en">The central platform for global submission and management. Featuring strict AI-native recognition standards.</span>
-                        <span class="lang-zh">全球作品征集與管理的核心平台。配備嚴格的AI原生認定標準。</span>
-                    </p>
-                </div>
-                <div class="relative z-10 w-10 h-10 rounded-full bg-white text-black flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
-                    &nearr;
-                </div>
-                <div class="absolute right-0 bottom-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
-            </div>
-
-            <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">🏦</div>
-                <h4 class="font-bold text-sm mb-1">AIF.Market</h4>
-                <p class="text-[10px] text-gray-400">Financing</p>
-            </div>
-             <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">🎓</div>
-                <h4 class="font-bold text-sm mb-1">AI Academy</h4>
-                 <p class="text-[10px] text-gray-400">Education</p>
-            </div>
-             <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">📺</div>
-                <h4 class="font-bold text-sm mb-1">404.world</h4>
-                 <p class="text-[10px] text-gray-400">Streaming</p>
-            </div>
-            
-             <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">🌟</div>
-                <h4 class="font-bold text-sm mb-1">StarOS</h4>
-                 <p class="text-[10px] text-gray-400">Digital Human</p>
-            </div>
-             <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">📜</div>
-                <h4 class="font-bold text-sm mb-1">HKAIFC</h4>
-                 <p class="text-[10px] text-gray-400">Standards</p>
-            </div>
-             <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">👓</div>
-                <h4 class="font-bold text-sm mb-1">404GLASS</h4>
-                 <p class="text-[10px] text-gray-400">Hardware</p>
-            </div>
-            <div class="bg-white border border-gray-200 p-6 rounded-xl hover:border-black transition-colors group">
-                <div class="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all">💱</div>
-                <h4 class="font-bold text-sm mb-1">Exchange</h4>
-                 <p class="text-[10px] text-gray-400">Liquidity</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto border-t border-gray-200 bg-gray-50">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <div class="reveal-text">
-                <h2 class="text-3xl font-bold mb-6"><span class="lang-en">AIF Token Economy</span><span class="lang-zh">AIF代幣經濟模型</span></h2>
-                <p class="text-gray-600 leading-relaxed mb-8 text-sm">
-                    <span class="lang-en">AIF token is the fuel of the ecosystem, enabling entry fees, governance voting, course payments, and NFT trading. Designed with a deflationary model to capture value from the success of AI artworks.</span>
-                    <span class="lang-zh">AIF代幣是生態系統的燃料，用於支付參賽費用、治理投票、課程費用和NFT交易。採用通縮模型設計，從AI藝術作品的成功中捕獲價值。</span>
-                </p>
-                <ul class="space-y-3 text-sm font-medium">
-                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-black rounded-full"></span><span class="lang-en">Deflationary Model (Buyback & Burn)</span><span class="lang-zh">通縮模型 (回購與銷毀)</span></li>
-                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-black rounded-full"></span><span class="lang-en">Staking for Governance Rights</span><span class="lang-zh">質押獲取DAO治理權</span></li>
-                    <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-black rounded-full"></span><span class="lang-en">Asset Financialization</span><span class="lang-zh">創意資產金融化</span></li>
-                </ul>
-            </div>
-            
-            <div class="bg-white border border-gray-200 p-8 rounded-xl reveal-text delay-100">
-                <h3 class="text-xs font-bold uppercase tracking-widest mb-6 text-center text-gray-400">Value Flywheel</h3>
-                <div class="grid grid-cols-2 gap-4 text-center">
-                    <div class="p-4 border border-gray-100 rounded hover:border-black transition-colors">
-                        <div class="text-lg font-bold mb-1">1. Fuel</div>
-                        <div class="text-[10px] text-gray-400">Capital Injection</div>
-                    </div>
-                    <div class="p-4 border border-gray-100 rounded hover:border-black transition-colors">
-                        <div class="text-lg font-bold mb-1">2. Engine</div>
-                        <div class="text-[10px] text-gray-400">Value Discovery</div>
-                    </div>
-                    <div class="p-4 border border-gray-100 rounded hover:border-black transition-colors">
-                        <div class="text-lg font-bold mb-1">4. Cycle</div>
-                        <div class="text-[10px] text-gray-400">Resource Attraction</div>
-                    </div>
-                    <div class="p-4 border border-gray-100 rounded hover:border-black transition-colors">
-                        <div class="text-lg font-bold mb-1">3. Output</div>
-                        <div class="text-[10px] text-gray-400">Token Appreciation</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="schedule" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
-        <div class="mb-20 reveal-text">
-             <h2 class="text-3xl font-bold mb-12 text-center"><span class="lang-en">Innovation Exhibition</span><span class="lang-zh">創新展映體驗</span></h2>
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300">
-                    <h3 class="text-lg font-bold mb-3"><span class="lang-en">Neural Responsive Hall</span><span class="lang-zh">神經響應式展映廳</span></h3>
-                    <p class="text-xs leading-relaxed opacity-70"><span class="lang-en">World's first BCI viewing experience. Content adjusts to audience collective consciousness.</span><span class="lang-zh">全球首創腦機接口觀影。電影內容根據觀眾集體意識狀態實時動態調整。</span></p>
-                </div>
-                <div class="p-6 border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300">
-                    <h3 class="text-lg font-bold mb-3"><span class="lang-en">Virtual Production Stage</span><span class="lang-zh">虛擬制片舞台秀</span></h3>
-                    <p class="text-xs leading-relaxed opacity-70"><span class="lang-en">Real-time AI scene generation and digital character creation showcase.</span><span class="lang-zh">實時展示AI場景生成與數字角色創作過程。</span></p>
-                </div>
-                <div class="p-6 border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300">
-                    <h3 class="text-lg font-bold mb-3"><span class="lang-en">Immersive Theater</span><span class="lang-zh">沉浸式交互劇場</span></h3>
-                    <p class="text-xs leading-relaxed opacity-70"><span class="lang-en">360-degree projection where audience moves freely within the narrative world.</span><span class="lang-zh">360度環繞投影，觀眾可在虛擬世界中自由移動和互動。</span></p>
-                </div>
-             </div>
-        </div>
-        
-        <div class="max-w-4xl mx-auto reveal-text">
-            <h3 class="text-2xl font-bold mb-12 text-center"><span class="lang-en">Festival Schedule</span><span class="lang-zh">日程安排</span></h3>
-            <div class="relative border-l border-gray-200 space-y-10 ml-4">
-                
-                <div class="pl-10 relative group">
-                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-black rounded-full ring-4 ring-white"></div>
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                         <h4 class="text-xs font-bold uppercase tracking-widest text-black">Day 01</h4>
-                         <span class="text-xs text-gray-400">May 1, 2026</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2"><span class="lang-en">Opening Ceremony</span><span class="lang-zh">開幕盛典</span></h3>
-                    <p class="text-sm text-gray-500"><span class="lang-en">Global premiere of 3 heavyweight AI-native films.</span><span class="lang-zh">三部重量級AI原生電影全球首映。</span></p>
-                </div>
-
-                <div class="pl-10 relative group">
-                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-white"></div>
-                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Day 02 - 04</h4>
-                    <h3 class="text-xl font-bold mb-2"><span class="lang-en">Competition Screenings</span><span class="lang-zh">競賽單元展映</span></h3>
-                    <p class="text-sm text-gray-500"><span class="lang-en">Neural responsive screenings & virtual production stage shows.</span><span class="lang-zh">神經響應式展映、虛擬制片舞台秀等創新體驗。</span></p>
-                </div>
-
-                <div class="pl-10 relative group">
-                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-white"></div>
-                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Day 05</h4>
-                    <h3 class="text-xl font-bold mb-2"><span class="lang-en">AI Industry Summit</span><span class="lang-zh">AI產業峰會</span></h3>
-                    <p class="text-sm text-gray-500"><span class="lang-en">Release of "Hong Kong AI Film & TV Development White Paper".</span><span class="lang-zh">發布《香港AI影視發展白皮書》。</span></p>
-                </div>
-
-                <div class="pl-10 relative group">
-                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-black rounded-full ring-4 ring-white"></div>
-                    <h4 class="text-xs font-bold uppercase tracking-widest text-black mb-1">Day 07</h4>
-                    <h3 class="text-xl font-bold mb-2"><span class="lang-en">Awards & Closing</span><span class="lang-zh">頒獎典禮</span></h3>
-                    <p class="text-sm text-gray-500"><span class="lang-en">Revealing the Unicorn Gold Award winner. Closing banquet.</span><span class="lang-zh">揭曉獨角獸金獎得主，閉幕晚宴。</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="comparison" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-t border-gray-200">
+<section id="comparison" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-t border-gray-200">
         <h2 class="text-3xl font-bold mb-16 text-center reveal-text"><span class="lang-en">Why Us?</span><span class="lang-zh">先進性對比</span></h2>
         
         <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-gray-200 overflow-hidden reveal-text">
@@ -648,7 +731,327 @@
         </div>
     </section>
 
-    <footer class="bg-black text-white pt-24 pb-8 px-6 md:px-8 mt-24">
+
+    <section id="exhibition" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50">
+        <div class="mb-16 reveal-text text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                <span class="lang-en">Innovation Exhibition</span>
+                <span class="lang-zh">創新展映體驗</span>
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                <span class="lang-en">Nine revolutionary screening spaces redefining the relationship between film and audience</span>
+                <span class="lang-zh">九大創新展映空間，重新定義電影與觀眾的關係</span>
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-text">
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">🧠</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Neural Responsive Hall</span>
+                    <span class="lang-zh">神經響應式展映廳</span>
+                </h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">World's first BCI viewing experience. Film content dynamically adjusts based on audience collective consciousness in real-time.</span>
+                    <span class="lang-zh">全球首創腦機接口觀影體驗。電影內容根據觀眾集體意識狀態實時動態調整，實現真正的人機共創。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: 200</span>
+                    <span class="lang-zh">容量：200人</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">🎬</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Virtual Production Stage</span>
+                    <span class="lang-zh">虛擬制片舞台秀</span></h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">Real-time showcase of AI-assisted virtual production technology. Witness the creative process of AI-generated scenes and digital characters.</span>
+                    <span class="lang-zh">實時展示AI輔助的虛擬制片技術，觀眾可親眼目睹AI生成場景、數字角色的創作過程。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: 150</span>
+                    <span class="lang-zh">容量：150人</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">🎭</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Immersive Theater</span>
+                    <span class="lang-zh">沉浸式交互劇場</span>
+                </h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">360-degree surround projection and spatial audio system. Audiences can freely move and interact in virtual worlds.</span>
+                    <span class="lang-zh">360度環繞投影和空間音頻系統，觀眾可在虛擬世界中自由移動和互動，體驗AI原生敘事的無限可能性。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: 100</span>
+                    <span class="lang-zh">容量：100人</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">🤖</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Digital Life Zone</span>
+                    <span class="lang-zh">數字生命互動區</span>
+                </h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">Engage in deep dialogue with AI-driven digital characters, experiencing breakthroughs in emotional expression and personality.</span>
+                    <span class="lang-zh">與AI驅動的數字角色進行深度對話和互動，體驗AI在情感表達、個性塑造方面的突破性進展。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: 50</span>
+                    <span class="lang-zh">容量：50人</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">🌍</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Parallel World Workshop</span>
+                    <span class="lang-zh">平行世界創作工坊</span>
+                </h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">Under professional guidance, use AI tools to create your own parallel world narratives, experiencing the "conductor" role.</span>
+                    <span class="lang-zh">在專業指導下，使用AI工具創建自己的平行世界敘事，體驗「指揮家」角色的創作過程。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: 30</span>
+                    <span class="lang-zh">容量：30人</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white border border-gray-200 rounded-xl hover:bg-black hover:text-white transition-all duration-300 group">
+                <div class="text-4xl mb-4">📊</div>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-white">
+                    <span class="lang-en">Data Visualization Corridor</span>
+                    <span class="lang-zh">數據可視化長廊</span>
+                </h3>
+                <p class="text-sm leading-relaxed opacity-70 group-hover:text-gray-300">
+                    <span class="lang-en">Artistic data visualization displaying AI film creation processes, data flows, and algorithmic decisions.</span>
+                    <span class="lang-zh">通過藝術化的數據可視化，展示AI電影創作過程中的數據流動、模型訓練和算法決策。</span>
+                </p>
+                <div class="mt-4 pt-4 border-t border-current opacity-50 text-xs">
+                    <span class="lang-en">Capacity: Unlimited</span>
+                    <span class="lang-zh">容量：不限</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section id="schedule" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 reveal-text">
+                <h2 class="text-4xl font-bold mb-6">
+                    <span class="lang-en">Festival Schedule</span>
+                    <span class="lang-zh">電影節時間表</span>
+                </h2>
+                <p class="text-gray-500">
+                    <span class="lang-en">Seven-day extravaganza covering screenings, competitions, forums, workshops, and market events</span>
+                    <span class="lang-zh">七天盛會，涵蓋展映、競賽、論壇、工作坊和市場活動</span>
+                </p>
+                <p class="text-sm text-gray-400 mt-2 font-mono">
+                    <span class="lang-en">May 1-7, 2026 · Hong Kong Convention and Exhibition Centre</span>
+                    <span class="lang-zh">2026年5月1-7日 · 香港會議展覽中心</span>
+                </p>
+            </div>
+            
+            <div class="relative border-l border-gray-200 space-y-10 ml-4 reveal-text">
+                <!-- Day 1 -->
+                <div class="pl-10 relative group">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-black rounded-full ring-4 ring-white"></div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-black">Day 01</h4>
+                        <span class="text-xs text-gray-400 font-mono">May 1, 2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en">Opening Ceremony</span>
+                        <span class="lang-zh">開幕盛典</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <span class="lang-en">Grand opening ceremony with global premiere of three heavyweight AI-native films. Debut of Hybrid Intelligence Collective jury and official festival opening announcement.</span>
+                        <span class="lang-zh">盛大的開幕儀式，全球首映三部重量級AI原生電影，混合智能集體評審團首次亮相，宣布電影節正式開幕。</span>
+                    </p>
+                    <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded border-l-2 border-black">
+                        <strong><span class="lang-en">Main Events:</span><span class="lang-zh">主要活動：</span></strong>
+                        <span class="lang-en">Opening red carpet, Hybrid Intelligence Collective debut, global premiere, opening reception</span>
+                        <span class="lang-zh">開幕紅毯、混合智能集體亮相、全球首映、開幕酒會</span>
+                    </div>
+                </div>
+
+                <!-- Day 2-4 -->
+                <div class="pl-10 relative group">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-white"></div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Day 02 - 04</h4>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en">Competition Unit Screenings</span>
+                        <span class="lang-zh">競賽單元展映</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <span class="lang-en">Four category works screened in rotation, including neural responsive screenings, virtual production stage shows, and other innovative experiences, with deep jury participation.</span>
+                        <span class="lang-zh">四大類別作品輪番展映，包括神經響應式展映、虛擬制片舞台秀等創新體驗，評審團深度參與。</span>
+                    </p>
+                    <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded border-l-2 border-gray-300">
+                        <strong><span class="lang-en">Main Events:</span><span class="lang-zh">主要活動：</span></strong>
+                        <span class="lang-en">Competition work screenings, creator dialogues, technical demos, jury critiques</span>
+                        <span class="lang-zh">競賽作品展映、創作者對談、技術演示、評審團點評</span>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="pl-10 relative group">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-white"></div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Day 05</h4>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en">AI Industry Summit</span>
+                        <span class="lang-zh">AI產業峰會</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <span class="lang-en">Release of "Hong Kong AI Film & TV Development White Paper". Industry panels, masterclasses, and keynote speeches from AI and film industry leaders.</span>
+                        <span class="lang-zh">發布《香港AI影視發展白皮書》。產業論壇、大師班，以及來自AI與電影產業領袖的主題演講。</span>
+                    </p>
+                    <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded border-l-2 border-gray-300">
+                        <strong><span class="lang-en">Main Events:</span><span class="lang-zh">主要活動：</span></strong>
+                        <span class="lang-en">White paper release, industry forums, masterclasses, technology showcase</span>
+                        <span class="lang-zh">白皮書發布、產業論壇、大師班、技術展示</span>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="pl-10 relative group">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-white"></div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Day 06</h4>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en">AIF Community Day</span>
+                        <span class="lang-zh">AIF社區日</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <span class="lang-en">DAO governance meeting, AIF token holder exclusive events, and the official launch of the 404.world interactive streaming platform.</span>
+                        <span class="lang-zh">DAO治理大會、AIF代幣持有者專屬活動，以及404.world互動流媒體平台正式發布。</span>
+                    </p>
+                    <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded border-l-2 border-gray-300">
+                        <strong><span class="lang-en">Main Events:</span><span class="lang-zh">主要活動：</span></strong>
+                        <span class="lang-en">DAO governance meeting, token holder events, 404.world platform launch</span>
+                        <span class="lang-zh">DAO治理會議、代幣持有者活動、404.world平台發布</span>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="pl-10 relative group">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-black rounded-full ring-4 ring-white"></div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-black mb-1">Day 07</h4>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en">Awards Ceremony & Closing</span>
+                        <span class="lang-zh">頒獎典禮與閉幕</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <span class="lang-en">Revealing the Unicorn Gold Award winner and 27 award categories. Grand awards ceremony followed by closing gala banquet.</span>
+                        <span class="lang-zh">揭曉獨角獸金獎得主及27個獎項得主。盛大的頒獎典禮，隨後舉行閉幕晚宴。</span>
+                    </p>
+                    <div class="text-xs text-gray-500 bg-gray-50 p-3 rounded border-l-2 border-black">
+                        <strong><span class="lang-en">Main Events:</span><span class="lang-zh">主要活動：</span></strong>
+                        <span class="lang-en">Awards ceremony, winner announcements, NFT trophy minting, closing gala</span>
+                        <span class="lang-zh">頒獎典禮、獲獎者公布、NFT獎盃鑄造、閉幕晚宴</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="venue" class="py-24 px-6 md:px-8 max-w-[1920px] mx-auto bg-gray-50 border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-5">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 reveal-text">
+                    <span class="lang-en">Hong Kong <br> Awaits You</span>
+                    <span class="lang-zh">香港 <br> 相見</span>
+                </h2>
+                <span class="inline-block px-3 py-1 rounded-full border border-gray-300 text-xs font-mono text-gray-500 uppercase reveal-text delay-100">// The Global Hub</span>
+            </div>
+            
+            <div class="md:col-span-7 space-y-8 reveal-text">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Hong Kong Convention and Exhibition Centre</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        <span class="lang-en">Located on the north shore of Wan Chai, overlooking Victoria Harbour. A global hub connecting East and West, the perfect stage for the world's first AI-native film festival.</span>
+                        <span class="lang-zh">位於香港灣仔北岸，俯瞰維多利亞港。連接東西方的全球樞紐，是全球首個AI原生電影節的完美舞台。</span>
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-white rounded-xl border border-gray-200">
+                        <div class="text-xs font-mono text-gray-400 mb-2 uppercase tracking-wider">
+                            <span class="lang-en">Address</span>
+                            <span class="lang-zh">地址</span>
+                        </div>
+                        <p class="font-medium">1 Expo Drive, Wan Chai<br>Hong Kong</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl border border-gray-200">
+                        <div class="text-xs font-mono text-gray-400 mb-2 uppercase tracking-wider">
+                            <span class="lang-en">Dates</span>
+                            <span class="lang-zh">日期</span>
+                        </div>
+                        <p class="font-medium">May 1-7, 2026</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl border border-gray-200">
+                        <div class="text-xs font-mono text-gray-400 mb-2 uppercase tracking-wider">
+                            <span class="lang-en">Transportation</span>
+                            <span class="lang-zh">交通</span>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">MTR Wan Chai Station Exit A5<br>5 mins walk</span>
+                            <span class="lang-zh">港鐵灣仔站A5出口<br>步行5分鐘</span>
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl border border-gray-200">
+                        <div class="text-xs font-mono text-gray-400 mb-2 uppercase tracking-wider">
+                            <span class="lang-en">Capacity</span>
+                            <span class="lang-zh">容量</span>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            <span class="lang-en">10,000+ attendees<br>9 exhibition spaces</span>
+                            <span class="lang-zh">10,000+ 參與者<br>9個展映空間</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 p-6 bg-black text-white rounded-xl">
+                    <h4 class="font-bold mb-3">
+                        <span class="lang-en">Why Hong Kong?</span>
+                        <span class="lang-zh">為什麼選擇香港？</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-white mt-1">→</span>
+                            <span><span class="lang-en">Gateway between East and West, the perfect bridge for AI innovation</span><span class="lang-zh">東西方交匯點，AI創新的完美橋樑</span></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-white mt-1">→</span>
+                            <span><span class="lang-en">World-class infrastructure and international connectivity</span><span class="lang-zh">世界級基礎設施與國際連通性</span></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-white mt-1">→</span>
+                            <span><span class="lang-en">Thriving creative industries and technology ecosystem</span><span class="lang-zh">蓬勃發展的創意產業與科技生態</span></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-white mt-1">→</span>
+                            <span><span class="lang-en">Hub for Web3 and blockchain innovation in Asia</span><span class="lang-zh">亞洲Web3與區塊鏈創新中心</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer class="bg-black text-white pt-24 pb-8 px-6 md:px-8 mt-24">
         <div class="max-w-[1920px] mx-auto">
             <div class="flex flex-col items-center justify-center mb-24 text-center reveal-text">
                 <h2 class="text-[10vw] font-bold tracking-tighter leading-none mb-8">
@@ -703,6 +1106,7 @@
             const currentLang = body.getAttribute('data-lang');
             const newLang = currentLang === 'en' ? 'zh' : 'en';
             body.setAttribute('data-lang', newLang);
+            localStorage.setItem('preferredLanguage', newLang);
         }
 
         // Intersection Observer for Reveal
@@ -712,9 +1116,24 @@
                     entry.target.classList.add('active');
                 }
             });
-        }, { threshold: 0.1 });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
 
-        document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+        // Initialize on DOM Load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set language from localStorage
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                document.body.setAttribute('data-lang', savedLang);
+            }
+
+            // Observe all reveal elements
+            document.querySelectorAll('.reveal-text').forEach(el => {
+                observer.observe(el);
+            });
+        });
     </script>
 </body>
 </html>
